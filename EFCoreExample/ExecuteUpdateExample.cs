@@ -33,7 +33,6 @@ public class ExecuteUpdateExample
         return dbContext.SaveChanges();
     }
 
-    [Benchmark]
     public int UpdateTodoWithExecuteUpdate()
     {
         using var dbContext = new TodoDbContext();
