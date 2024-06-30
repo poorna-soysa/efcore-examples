@@ -1,10 +1,13 @@
 ﻿// See https://aka.ms/new-console-template for more information
 
+using BenchmarkDotNet.Running;
 using EFCoreExample;
 
 
-QueryTagsExample queryTags = new();
+BenchmarkRunner.Run<CompliedQueriesBenchmarkExample>();
 
-queryTags.GetTodos();
+//QueryTagsExample queryTags = new();
+
+//queryTags.GetTodos();
 
 
